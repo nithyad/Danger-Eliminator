@@ -1,0 +1,514 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Mobile Attempt for Emergency Menu</title>
+	
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<!-- Do not use this! Will cause a href problems, inability to cross platform
+	<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script> -->
+	
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+	<link rel=" icon" type="image/png " href=" ToKim.png" />
+	<script>
+
+
+	function setupPage()
+	{
+	}	
+		
+	</script>
+	
+	<style>
+	
+h1 {
+	font-family: Garamond, Baskerville, Baskerville Old Face, Hoefler Text, Times New Roman, serif;
+	font-variant: small-caps;
+    font-size: 13vw;
+	font-weight: bold;
+    text-align: center;
+    color: black;
+    padding: 1vw;
+    background-color: #d6d5d5;
+    -webkit-border-radius: 20px; 
+    -moz-border-radius: 20px; 
+    border-radius: 20px;  
+    border: ridge; 
+    border-color: gray; 
+    border-width: 3px 20px 9px 15px;
+    margin-top: 0vw;
+}
+
+
+p {
+	font-family: Tahoma;
+	font-size: 20px;
+	color: #000000;
+	margin-left: 5%;
+	margin-right: 50%;
+	margin-top: 40px;
+	float: left;
+	text-align: justify;
+}	
+
+
+.resizedTextbox {
+	width: 65vw;
+	height: 7vw;
+}
+
+
+input { 
+font-size: 4vw; 
+}
+
+	
+.btn1 {
+  background: #eb7b7b;
+  background-image: -webkit-linear-gradient(top, #eb7b7b, #ff0000);
+  background-image: -moz-linear-gradient(top, #eb7b7b, #ff0000);
+  background-image: -ms-linear-gradient(top, #eb7b7b, #ff0000);
+  background-image: -o-linear-gradient(top, #eb7b7b, #ff0000);
+  background-image: linear-gradient(to bottom, #eb7b7b, #ff0000);
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+  text-shadow: 2% 2% 4% #000000;
+  -webkit-box-shadow: 0% 2% 6% #ff0000;
+  -moz-box-shadow: 0% 2% 6% #ff0000;
+  box-shadow: 0% 2% 6% #ff0000;
+  font-family: Tahoma;
+  font-weight: bold;
+  color: #ffffff;
+  font-size: 6vw;
+  margin-top: 10%;
+  height: 100%;
+  width: 100%;
+  border: solid #9e2828 3px;
+  text-decoration: none;
+  padding: 5%;
+	text-align: center;
+
+  
+}
+
+.btn1:hover {
+  background: #000000;
+  background-image: -webkit-linear-gradient(top, #000000, #ff0000);
+  background-image: -moz-linear-gradient(top, #000000, #ff0000);
+  background-image: -ms-linear-gradient(top, #000000, #ff0000);
+  background-image: -o-linear-gradient(top, #000000, #ff0000);
+  background-image: linear-gradient(to bottom, #000000, #ff0000);
+  text-decoration: none;
+}
+
+
+
+.btn2 {
+  background: #7bebeb;
+  background-image: -webkit-linear-gradient(top, #7bebeb, #0000ff);
+  background-image: -moz-linear-gradient(top, #7bebeb, #0000ff);
+  background-image: -ms-linear-gradient(top, #7bebeb, #0000ff);
+  background-image: -o-linear-gradient(top, #7bebeb, #0000ff);
+  background-image: linear-gradient(to bottom, #7bebeb, #0000ff);
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+  text-shadow: 2% 2% 4% #000000;
+  -webkit-box-shadow: 0% 2% 6% #ff0000;
+  -moz-box-shadow: 0% 2% 6% #ff0000;
+  box-shadow: 0% 2% 6% #ff0000;
+  font-family: Tahoma;
+  font-weight: bold;
+  color: #ffffff;
+  font-size: 200%;
+  margin-top: 10%;
+  height: 100%;
+  width: 100%;
+  border: solid #289e9e 3px;
+  text-decoration: none;
+  padding: 5%;
+	text-align: center;
+	
+}
+
+.btn2:hover {
+
+  background: #000000;
+  background-image: -webkit-linear-gradient(top, #000000, #0000ff);
+  background-image: -moz-linear-gradient(top, #000000, #0000ff);
+  background-image: -ms-linear-gradient(top, #000000, #0000ff);
+  background-image: -o-linear-gradient(top, #000000, #0000ff);
+  background-image: linear-gradient(to bottom, #000000, #0000ff);
+  text-decoration: none;
+ }
+
+
+.btn3 {
+  background: #c0c0c0;
+  background-image: -webkit-linear-gradient(top, #eeeeee, #404040);
+  background-image: -moz-linear-gradient(top, #eeeeee, #404040);
+  background-image: -ms-linear-gradient(top, #eeeeee, #404040);
+  background-image: -o-linear-gradient(top, #eeeeee, #404040);
+  background-image: linear-gradient(to bottom, #eeeeee, #404040);
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+  text-shadow: 2% 2% 4% #000000;
+  -webkit-box-shadow: 0% 2% 6% #ff0000;
+  -moz-box-shadow: 0% 2% 6% #ff0000;
+  box-shadow: 0% 2% 6% #ff0000;
+  font-family: Tahoma;
+  font-weight: bold;
+  color: #ffffff;
+  font-size: 100%;
+  margin-top: 20%;
+  height: 100%;
+  width: 100%;
+  border: solid #525252 3px;
+  text-decoration: none;
+  padding: 5%;
+	text-align: center;
+}
+
+.btn3:hover {
+  background: #000000;
+  background-image: -webkit-linear-gradient(top, #000000, #404040);
+  background-image: -moz-linear-gradient(top, #000000, #404040);
+  background-image: -ms-linear-gradient(top, #000000, #404040);
+  background-image: -o-linear-gradient(top, #000000, #404040);
+  background-image: linear-gradient(to bottom, #000000, #404040);
+  text-decoration: none;
+}
+
+
+
+.btn4 {
+  background-image: -webkit-linear-gradient(top, #559e65, #2c5234);
+  background-image: -moz-linear-gradient(top, #559e65, #2c5234);
+  background-image: -ms-linear-gradient(top, #559e65, #2c5234);
+  background-image: -o-linear-gradient(top, #559e65, #2c5234);
+  background-image: linear-gradient(to bottom, #559e65, #2c5234);
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+  text-shadow: 2% 2% 4% #000000;
+  -webkit-box-shadow: 0% 2% 6% #ff0000;
+  -moz-box-shadow: 0% 2% 6% #ff0000;
+  box-shadow: 0% 2% 6% #ff0000;
+  font-family: Georgia;
+  font-variant: small-caps;
+  color: #ffffff;
+  font-size: 4vw;
+  height: 30%;
+  width: 35%;
+  border: solid #6dc066 3px;
+  text-decoration: none;
+  padding: 5%;
+	text-align: center;
+  
+}
+
+.btn4:hover {
+  background: #000000;
+  background-image: -webkit-linear-gradient(top, #000000, #2c5234);
+  background-image: -moz-linear-gradient(top, #000000, #2c5234);
+  background-image: -ms-linear-gradient(top, #000000, #2c5234);
+  background-image: -o-linear-gradient(top, #000000, #2c5234);
+  background-image: linear-gradient(to bottom, #000000, #2c5234);
+  text-decoration: none;
+}
+
+
+a {
+	color: #FFFFFF;
+    text-decoration: none;
+}
+
+
+a:hover {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+
+.btn5 {
+  background: #9d92e8;
+  background-image: -webkit-linear-gradient(top, #9d92e8, #660060);
+  background-image: -moz-linear-gradient(top, #9d92e8, #660060);
+  background-image: -ms-linear-gradient(top, #9d92e8, #660060);
+  background-image: -o-linear-gradient(top, #9d92e8, #660060);
+  background-image: linear-gradient(to bottom, #9d92e8, #660060);
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+  text-shadow: 2% 2% 4% #000000;
+  -webkit-box-shadow: 0% 2% 6% #ff0000;
+  -moz-box-shadow: 0% 2% 6% #ff0000;
+  box-shadow: 0% 2% 6% #ff0000;
+ font-family: Georgia;
+  font-variant: small-caps;
+  color: #ffffff;
+  font-size: 4vw;
+  height: 30%;
+  width: 35%;
+  border: solid #74048a 3px;
+  text-decoration: none;
+  padding: 5%;
+	text-align: center;
+}
+
+.btn5:hover {
+
+  background: #000000;
+  background-image: -webkit-linear-gradient(top, #000000, #660060);
+  background-image: -moz-linear-gradient(top, #000000, #660060);
+  background-image: -ms-linear-gradient(top, #000000, #660060);
+  background-image: -o-linear-gradient(top, #000000, #660060);
+  background-image: linear-gradient(to bottom, #000000, #660060);
+  text-decoration: none;
+ }
+
+
+.btn6 {
+  background: #c0c0c0;
+  background-image: -webkit-linear-gradient(top, #ffdb99, #FFA500);
+  background-image: -moz-linear-gradient(top, #ffdb99, #FFA500);
+  background-image: -ms-linear-gradient(top, #ffdb99, #FFA500);
+  background-image: -o-linear-gradient(top, #ffdb99, #FFA500);
+  background-image: linear-gradient(to bottom, #ffdb99, #FFA500);
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+  text-shadow: 2% 2% 4% #000000;
+  -webkit-box-shadow: 0% 2% 6% #ff0000;
+  -moz-box-shadow: 0% 2% 6% #ff0000;
+  box-shadow: 0% 2% 6% #ff0000;
+ font-family: Georgia;
+  font-variant: small-caps;
+  color: #ffffff;
+  font-size: 4vw;
+  height: 30%;
+  width: 35%;
+  border: solid #cc8400 3px;
+  text-decoration: none;
+  padding: 5% 5% 5% 3%;
+	text-align: center;
+}
+
+.btn6:hover {
+  background: #000000;
+  background-image: -webkit-linear-gradient(top, #000000, #FFA500);
+  background-image: -moz-linear-gradient(top, #000000, #FFA500);
+  background-image: -ms-linear-gradient(top, #000000, #FFA500);
+  background-image: -o-linear-gradient(top, #000000, #FFA500);
+  background-image: linear-gradient(to bottom, #000000, #FFA500);
+  text-decoration: none;
+}
+
+
+
+.btn7 {
+  background: #9fc1d3;
+  background-image: -webkit-linear-gradient(top, #9fc1d3, #116493);
+  background-image: -moz-linear-gradient(top, #9fc1d3, #116493);
+  background-image: -ms-linear-gradient(top, #9fc1d3, #116493);
+  background-image: -o-linear-gradient(top, #9fc1d3, #116493);
+  background-image: linear-gradient(to bottom, #9fc1d3, #116493);
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+  text-shadow: 2% 2% 4% #000000;
+  -webkit-box-shadow: 0% 2% 6% #ff0000;
+  -moz-box-shadow: 0% 2% 6% #ff0000;
+  box-shadow: 0% 2% 6% #ff0000;
+ font-family: Georgia;
+  font-variant: small-caps;
+  color: #ffffff;
+  font-size: 4vw;
+  height: 30%;
+  width: 35%;
+  border: solid #0b4666 3px;
+  text-decoration: none;
+  padding: 5%;
+	text-align: center;
+  
+}
+
+.btn7:hover {
+  background: #000000;
+  background-image: -webkit-linear-gradient(top, #000000, #116493);
+  background-image: -moz-linear-gradient(top, #000000, #116493);
+  background-image: -ms-linear-gradient(top, #000000, #116493);
+  background-image: -o-linear-gradient(top, #000000, #116493);
+  background-image: linear-gradient(to bottom, #000000, #116493);
+  text-decoration: none;
+}
+
+
+
+.btn8 {
+  background: #9fc1d3;
+  background-image: -webkit-linear-gradient(top, #ece1cc, #d2ba92);
+  background-image: -moz-linear-gradient(top, #ece1cc, #d2ba92);
+  background-image: -ms-linear-gradient(top, #ece1cc, #d2ba92);
+  background-image: -o-linear-gradient(top, #ece1cc, #d2ba92);
+  background-image: linear-gradient(to bottom, #ece1cc, #d2ba92);
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+  text-shadow: 2% 2% 4% #000000;
+  -webkit-box-shadow: 0% 2% 6% #ff0000;
+  -moz-box-shadow: 0% 2% 6% #ff0000;
+  box-shadow: 0% 2% 6% #ff0000;
+ font-family: Georgia;
+  font-variant: small-caps;
+  color: #ffffff;
+  font-size: 4vw;
+  height: 30%;
+  width: 35%;
+  border: solid #b3a488 3px;
+  text-decoration: none;
+  padding: 5%;
+	text-align: center;
+  
+}
+
+.btn8:hover {
+  background: #000000;
+  background-image: -webkit-linear-gradient(top, #000000, #d2ba92);
+  background-image: -moz-linear-gradient(top, #000000, #d2ba92);
+  background-image: -ms-linear-gradient(top, #000000, #d2ba92);
+  background-image: -o-linear-gradient(top, #000000, #d2ba92);
+  background-image: linear-gradient(to bottom, #000000, #d2ba92);
+  text-decoration: none;
+}
+
+
+
+
+.btn9 {
+  background: #3399ff;
+  background-image: -webkit-linear-gradient(top, #3399ff, #17a6de);
+  background-image: -moz-linear-gradient(top, #3399ff, #17a6de);
+  background-image: -ms-linear-gradient(top, #3399ff, #17a6de);
+  background-image: -o-linear-gradient(top, #3399ff, #17a6de);
+  background-image: linear-gradient(to bottom, #3399ff, #17a6de);
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+  text-shadow: 2% 2% 4% #000000;
+  -webkit-box-shadow: 0% 2% 6% #ff0000;
+  -moz-box-shadow: 0% 2% 6% #ff0000;
+  box-shadow: 0% 2% 6% #ff0000;
+ font-family: Tahoma;
+    font-weight: 600;
+  font-variant: small-caps;
+  color: #ffffff;
+  font-size: 4vw;
+  margin-top: 12%;
+  height: 10%;
+  width: 60%;
+  border: solid #3366ff 3px;
+  text-decoration: none;
+  padding: 5%;
+	text-align: center;
+	
+  
+}
+
+.btn9:hover {
+  background: #000000;
+  background-image: -webkit-linear-gradient(top, #000000, #17a6de);
+  background-image: -moz-linear-gradient(top, #000000, #17a6de);
+  background-image: -ms-linear-gradient(top, #000000, #17a6de);
+  background-image: -o-linear-gradient(top, #000000, #17a6de);
+  background-image: linear-gradient(to bottom, #000000, #17a6de);
+  text-decoration: none;
+}
+
+
+
+
+.box-container {
+
+    margin: auto;
+    position: relative;
+    padding: 10%;
+    background: #72021A;
+    border-radius: 25px;
+    width: 100%;
+    min-height:100%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+	
+	}
+	</style>
+
+  
+  </head>
+
+  <body onload="setupPage()" onkeypress="keyCode(event)">
+    <div class="box-container">
+        
+
+        <h1>Emergency<h1 style="font-size: 4.5vw;">Treatment Procedures and Guides</h1></h1>
+
+        
+<div id="box-container">
+    <a href="MobileSeizure.html"><div class="btn8" style="margin-left:auto; margin-right:auto; display:block; margin-top:4vw; margin-bottom:0%">Seizure</div></a>
+<div id="box-container" style="display:inline;">
+    <a href="MobileChoking.html"><div class="btn5" style="float:right; margin-right:5vw; margin-top: 5vw;">Choking</div></a>
+    <a href="MobileCuts.html"><div class="btn7" style="margin-top:5vw; margin-left:5vw;">Cut</div></a>
+</div><br />
+<div id="box-container" style="display:inline;">
+    <a href="MobileStroke.html"><div class="btn4" style="float:right; margin-right:5vw; margin-top:3vw;">Stroke</div></a>
+    <a href="MobileUnconscious.html"><div class="btn6" style="margin-left:5vw; margin-top:3vw;">Unconscious</div></a>
+</div>
+
+
+
+ <div align="center"><a href ='ReferenceLinks.html'> <button type= "button" style="border-radius:20px; margin-top:5vw; height:6vw; width:30vw; color:black; font-size:3vw; font:Garamond; font-weight:bold;">References </button></a></div>
+
+
+<div id="box-container" style="display:inline">
+	<div id="tfheader" style="margin-top:10vw;">
+			<div align="center"><div size=10vw>
+			<form id="tfnewsearch" method="get" action="http://www.bing.com">
+					<input type="text" id="tfq2b" class="resizedTextbox" name="q" maxlength="1000" value="Instructions not here? Search Bing"><input type="submit" value=">" class="tfbutton2">
+			</form>
+			</div>
+			<div class="tfclear"></div>
+	</div>
+</div>
+	
+	
+
+<div id="box-container" style="display:inline">    
+   <a href='https://www.google.com/maps/search/hospital'><div class="btn9" style="float:right;">Locate hospitals</div></a>
+   <div class="btn1" style="font-variant:small-caps;font-size:4vw; margin-top:12%; height:10%; width:60%; padding:5%;"><a href="tel:4084011701">Call 911</a></div>
+</div>   
+
+
+
+ <div align="center"><a href ='MobileAttemptMenu.html'> <button type= "button" style="border-radius:20px; margin-top:5vw; height:6vw; width:30vw; color:black; font-size:3vw; font:Garamond; font-weight:bold;">BACK </button></a></div>
+
+     </div>
+
+ </body>
+
+
+</html>

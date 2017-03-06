@@ -1,0 +1,883 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Mobile Attempt for Emergency Menu</title>
+	
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->  
+	
+	<link rel=" icon" type="image/png " href=" ToKim.png" />
+	<script>
+
+
+	function setupPage()
+	{
+	}	
+		
+	</script>
+	
+	<script type="text/javascript">
+	// Author: ricocheting.com
+	// Description: slideshow that allows visitors to flip through a series of images on your website
+
+
+	var x=0;
+
+
+	function rotate(num)
+	{
+		fs=document.ff.slide;
+		x=num%fs.length;
+		if(x<0) 
+		{
+			x=fs.length-1;
+		}
+		
+		fs.selectedIndex=x;
+		document.getElementById("demos").selectedIndex = x;
+		document.images.show.src=fs.options[x].value;
+		//console.log('x:' + x + " list:" + document.getElementById("demos").selectedIndex);
+		//document.getElementById("mySelect").selectedIndex = 
+		//fs.selectedIndex=x;
+	}
+
+	function auto() 
+	{
+		if(document.ff.fa.value == "Stop")
+		{
+			rotate(++x);
+			setTimeout("auto()", 5000);
+		}
+	}
+	</script>
+	
+	<script>
+	/*
+	$(document).ready(function(){
+
+		$("h1,h2").on({
+			mouseenter: function(){
+				$(this).css("background-color", "white");
+			},  
+			mouseleave: function(){
+				$(this).css("background-color", "red");
+			}, 
+			click: function(){
+				$(this).css("background-color", "white");
+			}  
+		});
+	});*/
+	
+	
+	$(document).ready(function(){
+    $("p1").click(function(){
+        $(this).show();
+    });
+});
+	</script>
+	<style>
+	h1 {
+
+    font-family: Garamond, Baskerville, Baskerville Old Face, Hoefler Text, Times New Roman, serif;
+
+    font-variant: small-caps;
+
+    font-size: 13vw;
+
+    font-weight: bold;
+
+    text-align: center;
+
+    color: black;
+
+    padding: 1vw;
+
+    background-color: #d6d5d5;
+
+    -webkit-border-radius: 20px;
+
+    -moz-border-radius: 20px;
+
+    border-radius: 20px;
+
+    border: ridge;
+
+    border-color: gray;
+
+    border-width: 3px 20px 9px 15px;
+
+    margin-top: 0vw;
+
+}
+
+p {
+
+    font-family: Tahoma;
+
+    font-weight: 600;
+
+    font-variant: small-caps;
+
+    color: #ffffff;
+
+    font-size: 5vw;
+
+    margin-top: 12%;
+
+    height: 10%;
+
+    width: 100%;
+
+    text-align: justify;
+
+}
+
+li {
+
+	color: white; 
+	font-size: 4vw;}
+
+
+.btn1 {
+
+    background: #eb7b7b;
+
+    background-image: -webkit-linear-gradient(top, #eb7b7b, #ff0000);
+
+    background-image: -moz-linear-gradient(top, #eb7b7b, #ff0000);
+
+    background-image: -ms-linear-gradient(top, #eb7b7b, #ff0000);
+
+    background-image: -o-linear-gradient(top, #eb7b7b, #ff0000);
+
+    background-image: linear-gradient(to bottom, #eb7b7b, #ff0000);
+
+    -webkit-border-radius: 20px;
+
+    -moz-border-radius: 20px;
+
+    border-radius: 20px;
+
+    text-shadow: 2% 2% 4% #000000;
+
+    -webkit-box-shadow: 0% 2% 6% #ff0000;
+
+    -moz-box-shadow: 0% 2% 6% #ff0000;
+
+    box-shadow: 0% 2% 6% #ff0000;
+
+    font-family: Tahoma;
+
+    font-weight: bold;
+
+    color: #ffffff;
+
+    font-size: 6vw;
+
+    margin-top: 10%;
+
+    height: 100%;
+
+    width: 100%;
+
+    border: solid #9e2828 3px;
+
+    text-decoration: none;
+
+    padding: 5%;
+
+    text-align: center;
+
+}
+
+.btn1:hover {
+
+    background: #000000;
+
+    background-image: -webkit-linear-gradient(top, #000000, #ff0000);
+
+    background-image: -moz-linear-gradient(top, #000000, #ff0000);
+
+    background-image: -ms-linear-gradient(top, #000000, #ff0000);
+
+    background-image: -o-linear-gradient(top, #000000, #ff0000);
+
+    background-image: linear-gradient(to bottom, #000000, #ff0000);
+
+    text-decoration: none;
+
+}
+
+.btn2 {
+
+    background: #7bebeb;
+
+    background-image: -webkit-linear-gradient(top, #7bebeb, #0000ff);
+
+    background-image: -moz-linear-gradient(top, #7bebeb, #0000ff);
+
+    background-image: -ms-linear-gradient(top, #7bebeb, #0000ff);
+
+    background-image: -o-linear-gradient(top, #7bebeb, #0000ff);
+
+    background-image: linear-gradient(to bottom, #7bebeb, #0000ff);
+
+    -webkit-border-radius: 20px;
+
+    -moz-border-radius: 20px;
+
+    border-radius: 20px;
+
+    text-shadow: 2% 2% 4% #000000;
+
+    -webkit-box-shadow: 0% 2% 6% #ff0000;
+
+    -moz-box-shadow: 0% 2% 6% #ff0000;
+
+    box-shadow: 0% 2% 6% #ff0000;
+
+    font-family: Georgia;
+
+    font-weight: bold;
+
+    color: #ffffff;
+
+    font-size: 6vw;
+
+    margin-top: 10%;
+
+    height: 100%;
+
+    width: 100%;
+
+    border: solid #289e9e 3px;
+
+    text-decoration: none;
+
+    padding: 5%;
+
+    text-align: center;
+
+}
+
+.btn2:hover {
+
+    color: #FFFFFF;
+
+    background: #000000;
+
+    background-image: -webkit-linear-gradient(top, #000000, #0000ff);
+
+    background-image: -moz-linear-gradient(top, #000000, #0000ff);
+
+    background-image: -ms-linear-gradient(top, #000000, #0000ff);
+
+    background-image: -o-linear-gradient(top, #000000, #0000ff);
+
+    background-image: linear-gradient(to bottom, #000000, #0000ff);
+
+    text-decoration: none;
+
+}
+
+.btn3 {
+
+    background: #c0c0c0;
+
+    background-image: -webkit-linear-gradient(top, #eeeeee, #404040);
+
+    background-image: -moz-linear-gradient(top, #eeeeee, #404040);
+
+    background-image: -ms-linear-gradient(top, #eeeeee, #404040);
+
+    background-image: -o-linear-gradient(top, #eeeeee, #404040);
+
+    background-image: linear-gradient(to bottom, #eeeeee, #404040);
+
+    -webkit-border-radius: 20px;
+
+    -moz-border-radius: 20px;
+
+    border-radius: 20px;
+
+    text-shadow: 2% 2% 4% #000000;
+
+    -webkit-box-shadow: 0% 2% 6% #ff0000;
+
+    -moz-box-shadow: 0% 2% 6% #ff0000;
+
+    box-shadow: 0% 2% 6% #ff0000;
+
+    font-family: Georgia;
+
+    font-weight: bold;
+
+    color: #ffffff;
+
+    font-size: 6vw;
+
+    margin-top: 12%;
+
+    height: 100%;
+
+    width: 100%;
+
+    border: solid #525252 3px;
+
+    text-decoration: none;
+
+    padding: 5%;
+
+    text-align: center;
+
+}
+
+.btn3:hover {
+
+    background: #000000;
+
+    background-image: -webkit-linear-gradient(top, #000000, #404040);
+
+    background-image: -moz-linear-gradient(top, #000000, #404040);
+
+    background-image: -ms-linear-gradient(top, #000000, #404040);
+
+    background-image: -o-linear-gradient(top, #000000, #404040);
+
+    background-image: linear-gradient(to bottom, #000000, #404040);
+
+    text-decoration: none;
+
+}
+
+.btn4 {
+
+    background-image: -webkit-linear-gradient(top, #559e65, #2c5234);
+
+    background-image: -moz-linear-gradient(top, #559e65, #2c5234);
+
+    background-image: -ms-linear-gradient(top, #559e65, #2c5234);
+
+    background-image: -o-linear-gradient(top, #559e65, #2c5234);
+
+    background-image: linear-gradient(to bottom, #559e65, #2c5234);
+
+    -webkit-border-radius: 20px;
+
+    -moz-border-radius: 20px;
+
+    border-radius: 20px;
+
+    text-shadow: 2% 2% 4% #000000;
+
+    -webkit-box-shadow: 0% 2% 6% #ff0000;
+
+    -moz-box-shadow: 0% 2% 6% #ff0000;
+
+    box-shadow: 0% 2% 6% #ff0000;
+
+    font-family: Georgia;
+
+    font-variant: small-caps;
+
+    color: #ffffff;
+
+    font-size: 4vw;
+
+    height: 30%;
+
+    width: 35%;
+
+    border: solid #6dc066 3px;
+
+    text-decoration: none;
+
+    padding: 5%;
+
+    text-align: center;
+
+}
+
+.btn4:hover {
+
+    background: #000000;
+
+    background-image: -webkit-linear-gradient(top, #000000, #2c5234);
+
+    background-image: -moz-linear-gradient(top, #000000, #2c5234);
+
+    background-image: -ms-linear-gradient(top, #000000, #2c5234);
+
+    background-image: -o-linear-gradient(top, #000000, #2c5234);
+
+    background-image: linear-gradient(to bottom, #000000, #2c5234);
+
+    text-decoration: none;
+
+}
+
+a {
+
+    color: #FFFFFF;
+
+    text-decoration: none;
+
+}
+
+a:hover {
+
+    color: #FFFFFF;
+
+    text-decoration: none;
+
+}
+
+.btn5 {
+
+    background: #9d92e8;
+
+    background-image: -webkit-linear-gradient(top, #9d92e8, #660060);
+
+    background-image: -moz-linear-gradient(top, #9d92e8, #660060);
+
+    background-image: -ms-linear-gradient(top, #9d92e8, #660060);
+
+    background-image: -o-linear-gradient(top, #9d92e8, #660060);
+
+    background-image: linear-gradient(to bottom, #9d92e8, #660060);
+
+    -webkit-border-radius: 20px;
+
+    -moz-border-radius: 20px;
+
+    border-radius: 20px;
+
+    text-shadow: 2% 2% 4% #000000;
+
+    -webkit-box-shadow: 0% 2% 6% #ff0000;
+
+    -moz-box-shadow: 0% 2% 6% #ff0000;
+
+    box-shadow: 0% 2% 6% #ff0000;
+
+    font-family: Georgia;
+
+    font-variant: small-caps;
+
+    color: #ffffff;
+
+    font-size: 4vw;
+
+    height: 30%;
+
+    width: 35%;
+
+    border: solid #74048a 3px;
+
+    text-decoration: none;
+
+    padding: 5%;
+
+    text-align: center;
+
+}
+
+.btn5:hover {
+
+    background: #000000;
+
+    background-image: -webkit-linear-gradient(top, #000000, #660060);
+
+    background-image: -moz-linear-gradient(top, #000000, #660060);
+
+    background-image: -ms-linear-gradient(top, #000000, #660060);
+
+    background-image: -o-linear-gradient(top, #000000, #660060);
+
+    background-image: linear-gradient(to bottom, #000000, #660060);
+
+    text-decoration: none;
+
+}
+
+.btn6 {
+
+    background: #c0c0c0;
+
+    background-image: -webkit-linear-gradient(top, #ffdb99, #FFA500);
+
+    background-image: -moz-linear-gradient(top, #ffdb99, #FFA500);
+
+    background-image: -ms-linear-gradient(top, #ffdb99, #FFA500);
+
+    background-image: -o-linear-gradient(top, #ffdb99, #FFA500);
+
+    background-image: linear-gradient(to bottom, #ffdb99, #FFA500);
+
+    -webkit-border-radius: 20px;
+
+    -moz-border-radius: 20px;
+
+    border-radius: 20px;
+
+    text-shadow: 2% 2% 4% #000000;
+
+    -webkit-box-shadow: 0% 2% 6% #ff0000;
+
+    -moz-box-shadow: 0% 2% 6% #ff0000;
+
+    box-shadow: 0% 2% 6% #ff0000;
+
+    font-family: Georgia;
+
+    font-variant: small-caps;
+
+    color: #ffffff;
+
+    font-size: 4vw;
+
+    height: 30%;
+
+    width: 35%;
+
+    border: solid #cc8400 3px;
+
+    text-decoration: none;
+
+    padding: 5% 5% 5% 3%;
+
+    text-align: center;
+
+}
+
+.btn6:hover {
+
+    background: #000000;
+
+    background-image: -webkit-linear-gradient(top, #000000, #FFA500);
+
+    background-image: -moz-linear-gradient(top, #000000, #FFA500);
+
+    background-image: -ms-linear-gradient(top, #000000, #FFA500);
+
+    background-image: -o-linear-gradient(top, #000000, #FFA500);
+
+    background-image: linear-gradient(to bottom, #000000, #FFA500);
+
+    text-decoration: none;
+
+}
+
+.btn7 {
+
+    background: #9fc1d3;
+
+    background-image: -webkit-linear-gradient(top, #9fc1d3, #116493);
+
+    background-image: -moz-linear-gradient(top, #9fc1d3, #116493);
+
+    background-image: -ms-linear-gradient(top, #9fc1d3, #116493);
+
+    background-image: -o-linear-gradient(top, #9fc1d3, #116493);
+
+    background-image: linear-gradient(to bottom, #9fc1d3, #116493);
+
+    -webkit-border-radius: 20px;
+
+    -moz-border-radius: 20px;
+
+    border-radius: 20px;
+
+    text-shadow: 2% 2% 4% #000000;
+
+    -webkit-box-shadow: 0% 2% 6% #ff0000;
+
+    -moz-box-shadow: 0% 2% 6% #ff0000;
+
+    box-shadow: 0% 2% 6% #ff0000;
+
+    font-family: Georgia;
+
+    font-variant: small-caps;
+
+    color: #ffffff;
+
+    font-size: 4vw;
+
+    height: 30%;
+
+    width: 35%;
+
+    border: solid #0b4666 3px;
+
+    text-decoration: none;
+
+    padding: 5%;
+
+    text-align: center;
+
+}
+
+.btn7:hover {
+
+    background: #000000;
+
+    background-image: -webkit-linear-gradient(top, #000000, #116493);
+
+    background-image: -moz-linear-gradient(top, #000000, #116493);
+
+    background-image: -ms-linear-gradient(top, #000000, #116493);
+
+    background-image: -o-linear-gradient(top, #000000, #116493);
+
+    background-image: linear-gradient(to bottom, #000000, #116493);
+
+    text-decoration: none;
+
+}
+
+.btn8 {
+
+    background: #9fc1d3;
+
+    background-image: -webkit-linear-gradient(top, #ece1cc, #d2ba92);
+
+    background-image: -moz-linear-gradient(top, #ece1cc, #d2ba92);
+
+    background-image: -ms-linear-gradient(top, #ece1cc, #d2ba92);
+
+    background-image: -o-linear-gradient(top, #ece1cc, #d2ba92);
+
+    background-image: linear-gradient(to bottom, #ece1cc, #d2ba92);
+
+    -webkit-border-radius: 20px;
+
+    -moz-border-radius: 20px;
+
+    border-radius: 20px;
+
+    text-shadow: 2% 2% 4% #000000;
+
+    -webkit-box-shadow: 0% 2% 6% #ff0000;
+
+    -moz-box-shadow: 0% 2% 6% #ff0000;
+
+    box-shadow: 0% 2% 6% #ff0000;
+
+    font-family: Georgia;
+
+    font-variant: small-caps;
+
+    color: #ffffff;
+
+    font-size: 4vw;
+
+    height: 30%;
+
+    width: 35%;
+
+    border: solid #b3a488 3px;
+
+    text-decoration: none;
+
+    padding: 5%;
+
+    text-align: center;
+
+}
+
+.btn8:hover {
+
+    background: #000000;
+
+    background-image: -webkit-linear-gradient(top, #000000, #d2ba92);
+
+    background-image: -moz-linear-gradient(top, #000000, #d2ba92);
+
+    background-image: -ms-linear-gradient(top, #000000, #d2ba92);
+
+    background-image: -o-linear-gradient(top, #000000, #d2ba92);
+
+    background-image: linear-gradient(to bottom, #000000, #d2ba92);
+
+    text-decoration: none;
+
+}
+
+.btn9 {
+
+    background: #3399ff;
+
+    background-image: -webkit-linear-gradient(top, #3399ff, #17a6de);
+
+    background-image: -moz-linear-gradient(top, #3399ff, #17a6de);
+
+    background-image: -ms-linear-gradient(top, #3399ff, #17a6de);
+
+    background-image: -o-linear-gradient(top, #3399ff, #17a6de);
+
+    background-image: linear-gradient(to bottom, #3399ff, #17a6de);
+
+    -webkit-border-radius: 20px;
+
+    -moz-border-radius: 20px;
+
+    border-radius: 20px;
+
+    text-shadow: 2% 2% 4% #000000;
+
+    -webkit-box-shadow: 0% 2% 6% #ff0000;
+
+    -moz-box-shadow: 0% 2% 6% #ff0000;
+
+    box-shadow: 0% 2% 6% #ff0000;
+
+    font-family: Tahoma;
+
+    font-weight: 600;
+
+    font-variant: small-caps;
+
+    color: #ffffff;
+
+    font-size: 4vw;
+
+    margin-top: 12%;
+
+    height: 10%;
+
+    width: 60%;
+
+    border: solid #3366ff 3px;
+
+    text-decoration: none;
+
+    padding: 5%;
+
+    text-align: center;
+
+}
+
+.btn9:hover {
+
+    background: #000000;
+
+    background-image: -webkit-linear-gradient(top, #000000, #17a6de);
+
+    background-image: -moz-linear-gradient(top, #000000, #17a6de);
+
+    background-image: -ms-linear-gradient(top, #000000, #17a6de);
+
+    background-image: -o-linear-gradient(top, #000000, #17a6de);
+
+    background-image: linear-gradient(to bottom, #000000, #17a6de);
+
+    text-decoration: none;
+
+}
+
+.box-container {
+
+    margin: auto;
+
+    position: relative;
+
+    padding: 10%;
+
+    background: #72021A;
+
+    border-radius: 25px;
+
+    width: 100%;
+
+    min-height:100%;
+
+    -webkit-box-sizing: border-box;
+
+    -moz-box-sizing: border-box;
+
+    box-sizing: border-box;
+	</style>
+  
+  </head>
+
+ <body onload="setupPage()" onkeypress="keyCode(event)">
+    <div class="box-container">
+	<div class="container">
+		
+        <h1>Emergency<h1 style="font-size: 4.5vw;">Choking</h1></h1>
+	</div>
+
+<h1 style="margin-top:5vw; font-size:4vw; color:white; background:black;">Signs if someone is choking:</h1>
+ 
+
+<ol style="margin-top:4vw;">
+<li>A child who is choking may wave their arms or grab at their throat. </li>
+<br></br>
+<li>Older children and adults may hold their neck one or both hands, also known as the universal sign of choking.</li>
+<br></br>
+<li>A person is struggling to breathe and is taking gasps to gain air.</li>
+<br></br>
+<li>A person is coughing and gagging.</li>
+<br></br>
+<li>Bluish lips or skin</li>
+<br></br>
+</ol>
+
+
+<h1 style="font-size:4vw; color:white; background:black;">What to do: the Heimlich Maneuver </h1>
+<h1 style="font-size:3.8vw; color:white; background:black;">For a sitting or standing person:</h1>
+
+<ol style="margin-top:4vw;">
+<li>Position yourself behind the person.</li>
+<br></br>
+<li>Reach your arms around the choking person's waist. You may have to kneel for children.</li>
+<br></br>
+<li>Place your fist with the thumb side towards just above the person's belly button.</li>
+<br></br>
+<li>Grasp your first tightly with your other hand. </li>
+<br></br>
+<li> Make quick, inward thrusts with your fist until the person spits out the object. </li>
+<br></br>
+</ol>
+
+<h1 style="font-size:3.8vw; color:white; background:black;"> If the person is lying on his back:</h1>
+<ol style="margin-top:4vw;">
+<li>Straddle the person facing the head.</li> 
+<br></br>
+<li>Push your grasped fist upward and inward in a movement similar to the standing up heimlich maneuver.</li>
+</ol>
+
+
+
+ <div align="center"><a href ='MobileEmergencySituation.html'> <button type= "button" style="border-radius:20px; margin-top:5vw; height:6vw; width:30vw; align:center; color:black; font-size:3vw; font:Garamond; font-weight:bold;">BACK </button></a></div>
+
+
+
+	</div>
+	
+	
+	
+	
+	
+</body>
+</html>
